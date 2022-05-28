@@ -29,9 +29,26 @@ namespace ExeDataGridBinding
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 naufall = new Form2();
-            naufall.Show();
+            // Membuat Code Login dan Pindah Ke halaman Dashboard atau Halaman Selanjutnya 
+            // Code Perulangan Username dan Password dan pembuatan message Box
+
+            if (textBox1.Text.Equals("") || textBox2.Text.Equals(""))
+            {
+                MessageBox.Show("Data Tidak Boleh Kosong", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (textBox1.Text.Equals("Naufal") && textBox2.Text.Equals("1234"))
+
+            {
+                Form2 naufall = new Form2();
+                naufall.Show();
+            }
+
+            else
+            {
+                MessageBox.Show("Username atau password salah", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
+
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -47,6 +64,11 @@ namespace ExeDataGridBinding
         {
             Form1 naufal = new Form1();
             naufal.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

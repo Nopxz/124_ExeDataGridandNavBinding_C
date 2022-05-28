@@ -36,8 +36,7 @@ namespace ExeDataGridBinding
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Form1 naufal = new Form1();
-            naufal.Show();
+            this.Close();
         }
     }
 }
