@@ -38,6 +38,7 @@ namespace ExeDataGridBinding
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -72,7 +73,7 @@ namespace ExeDataGridBinding
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(278, 184);
+            this.textBox1.Location = new System.Drawing.Point(277, 184);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(223, 22);
             this.textBox1.TabIndex = 3;
@@ -116,6 +117,14 @@ namespace ExeDataGridBinding
             this.label3.Text = " DATA MAHASISWA TI";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Location = new System.Drawing.Point(222, 138);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(345, 272);
+            this.panel1.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -130,6 +139,7 @@ namespace ExeDataGridBinding
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -148,6 +158,7 @@ namespace ExeDataGridBinding
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
